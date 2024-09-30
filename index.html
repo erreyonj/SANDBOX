@@ -3,18 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Simple SiteLab Babyyyy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>erre Salon</title>
 </head>
-<body>
-    
-    <main>
+<body class="sourceLightBg sourceBlue">
 
+    <header class="flex just-sb">
         
+        <div id="logoDiv">
+
+        </div>
+
+        <nav id="navLinks" class="flex inCenter">
+            <a href="#" class="flex inCenter">Home</a>
+            <a href="#" class="flex inCenter">About</a>
+            <a href="#" class="flex inCenter">Services</a>
+            <a href="#" class="flex inCenter">Gallery</a>
+            <a href="#" class="flex inCenter"><i class="fa-solid fa-bell-concierge fa-xl flex" style="color: #fff;"></i></i></a>
+        </nav>
+    </header>
+
+    <main class="flex col">
+       <h1>At L'esprit, your spirit is what inspires us.</h1>
+       <h4>Let us take care of you.</h4>
+
+       <button class="btn"><a href="">Services</a></button>
+
+       <div class="visitorBox flex col">
+
+        <p>First Visit?</p>
+        <p>Get<strong>20%</strong> off your first color treatment!</p>
+        <button class="btn alt schedule"><a href="">Schedule Now!</a></button>
+
+       </div>
+       
     </main>
 
-    
+    <section id="services" class="flex hide">
+        <div class="container flex just-cnt">
+            <div id="beauticians" class="flex col inCenter service">
+                <div class="fakeIcon beauticians"></div>
+                <a href=""><h3>Expert Beauticians</h3></a>
+                <p>At L'esprit, our expert beauticians specialize in exceptional facial and nail treatments. With meticulous attention to detail and a passion for beauty, they ensure every client leaves feeling rejuvenated and polished.</p>
+            </div>
+            <div id="service" class="flex col inCenter service">
+                <div class="fakeIcon servant"></div>
+                <a href=""><h3>Servant Attitude</h3></a>
+                <p>Our team is dedicated to providing outstanding service and making every customer feel pampered. From the moment you walk in, you're treated like royalty, ensuring a relaxing and luxurious experience. Eligendi, earum optio eveniet velit beatae nesciunt!</p>
+            </div>
+            <div id="products" class="flex col inCenter service">
+                <div class="fakeIcon products"></div>
+                <a href=""><h3>Product Knowledge</h3></a>
+                <p>Staying ahead of the curve, our staff has expert knowledge of the latest and trending beauty products. At L'esprit, we use only the best to enhance your natural beauty and keep you on-trend. Eligendi, earum optio eveniet velit beatae nesciunt!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="spirit" class="flex hide">
+        
+        <div class="container flex">
+            <div id="spiritDesc">
+                <h2>Your Spirit is what drives you.</h2>
+                <p>At L'esprit, our mission is to cater to your spirit, ensuring you leave feeling empowered and confident. We believe that true beauty comes from within, and our stylists are dedicated to helping you discover and enhance your best self. We aim to uplift your spirit and boost your confidence. Our personalized approach ensures that every service is tailored to meet your unique needs, allowing you to shine both inside and out. At L'esprit, it's our Purpose to help you feel and look your absolute best.</p>
+
+                <button class="btn"><a href="">Read More</a></button>
+
+            </div>
+
+            <div class="spiritVideo flex inCenter">
+
+                <iframe src="https://www.youtube.com/embed/OPTOuRYGYeg?autoplay=1&loop=1&playlist=OPTOuRYGYeg" frameborder="0" width="720" height="400"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
 
     <script type="text/javascript" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/3c749a61a3.js" crossorigin="anonymous"></script>
 </body>
 </html>

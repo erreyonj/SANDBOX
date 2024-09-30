@@ -1,29 +1,66 @@
 * {
     box-sizing: border-box;
-    border: .5px solid black;
-}
-
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
+    /* border: .5px solid black; */
 }
 
 html {
     font-size: 62.5%;
-    padding: 2rem;
 }
 
+body * {
+    border: .5px solid black;
+    background: #D9E4E9;
+}
 
 *::-webkit-scrollbar {
     display: none;
 }
 
 
+
+li {
+    list-style: none;
+}
+
+
+
+
+#thisHeader {
+    display: flex;
+    height: 50px;
+}
+
+
+#thisNav {
+    display: flex;
+
+}
+
+#navLogoDiv {
+    width: 10%;
+    height: 100%;  
+}
+
+
+#signInDiv {
+    width: 15%;
+    height: 100%;
+}
+
+#navLinks {
+    width: 60%;
+    display: flex;
+    place-content: center stretch;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 100%;
+}
+
+#navLinks li {
+    width: 10%;    
+}
+
+#navSearch {
+    width: 15%;
+    height: 100%;
+}
