@@ -13,8 +13,9 @@
 // maxChar('03211141') === '1'
 
 
-
+// ****** ******* ********** //
 // ******************* CHUNK *********** //
+// ****** ******* ********** //
 
 // function chunk(arr, size){
 //     const chunked = []
@@ -31,8 +32,9 @@
 // console.log(chunk([1,2,3,4,5,6,7,8],3));
 
 
-
+// ****** ******* ********** //
 // ************** RUNNING SUM ****************** //
+// ****** ******* ********** //
 
 
 // var runningSum = function(nums) {
@@ -53,7 +55,9 @@
 // console.log(runningSum([1,2,3,4]));
 
 
+// ****** ******* ********** //
 // ******************* MAX WEALTH ***************** //
+// ****** ******* ********** //
 
 // var maximumWealth = function(accounts) {
 //     let set = accounts.map((acc)=> acc.reduce((acc,c)=>acc+c) )
@@ -64,8 +68,9 @@
 
 
 
-
+// ****** ******* ********** //
 // ****************** TOP K FREQUENT ********* //
+// ****** ******* ********** //
 
 // var topKFrequent = function(nums, k) {
     // let result = []
@@ -102,8 +107,9 @@
 
 
 
-
+// ****** ******* ********** //
 // ************** CONTAINS DUP ****************** //
+// ****** ******* ********** //
 
 // var containsDuplicate = function(nums) {
 //     const tracker = new Map()
@@ -127,8 +133,9 @@
 
 
 
-
+// ****** ******* ********** //
 // *********** IS ANAGRAM ************* //
+// ****** ******* ********** //
 
 
 // var isAnagram = function(s, t) {
@@ -143,8 +150,10 @@
 
 
 
-
+// ****** ******* ********** //
 // ************ CHALK REPLACER ****************** //
+// ****** ******* ********** //
+
 // currently too slow
 
 
@@ -210,8 +219,9 @@
 
 // console.log(chalkReplacer([2,2,3],1));
 
-
+// ****** ******* ********** //
 // ****** TWO SUM ********** //
+// ****** ******* ********** //
 
 // let twoSum = function(nums, target) {
 
@@ -235,8 +245,9 @@
 
 
 
-
+// ****** ******* ********** //
 // ****** BinarySearchTree PRACTICE ********** //
+// ****** ******* ********** //
 
 // class Node {
 //     constructor(value){
@@ -330,8 +341,9 @@
 // console.log(validBST3(anotherTree))
 
 
-
+// ****** ******* ********** //
 // ****** Heaps PRACTICE ********** //
+// ****** ******* ********** //
 
 class MyMaxHeap {
     constructor(){
@@ -357,11 +369,9 @@ class MyMaxHeap {
             if(this.heap[parentIdx] > this.heap[index]){
                 break
             }
-
             //otherwise, swap the value at i with its parent. In effect pushing it up the tree. Each new loop considers the new parent
             [this.heap[parentIdx], this.heap[index]] = [this.heap[index], this.heap[parentIdx]]
         }
-
     }
 
     extractMax(){
@@ -377,9 +387,41 @@ class MyMaxHeap {
 
     }
 
-
     heapifyDown(index){
-
-
     }
 }
+
+
+
+// ****** ******* ********** //
+
+let intArr1 = [3,2,5,10]
+let intArr2 = [4,7,8,9]
+
+let cubeOverSqr = (arr1, arr2) =>{
+    let sqrSum = arr1.reduce((a,b)=>a+ b**2,0)
+    let cubSum = arr2.reduce((a,b)=>a+ b**3,0) 
+
+    console.log(sqrSum > cubSum)
+}
+
+// cubeOverSqr(intArr1,intArr2)
+
+
+function areMultiples(arr){
+    console.log(arr.filter((num,i)=> num%i === 0))
+}
+
+// areMultiples([22,-6,32,82,9,25])
+
+function groupAna(strs){
+    let map = {}
+    for(let el of strs){
+        let sort = el.split('').sort().join('')
+        map[sort] ? map[sort].push(el) : map[sort] = [el]
+    }
+    console.log(Object.keys(map))
+}
+
+groupAna(['eat', 'tea', 'tan'])
+
